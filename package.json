@@ -6,20 +6,23 @@
   },
   "private": true,
   "scripts": {
-    "start": "node app.js"
+    "postinstall": "./node_modules/bower/bin/bower install"
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
     "bower": "*",
+    "cookie-parser": "^1.4.4",
     "crypto": "0.0.3",
-    "express": "3.4.8",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
     "jade": "1.1.5",
-    "mongoose": "3.8.7",
-    "socket.io": "0.9.16"
+    "method-override": "^3.0.0",
+    "mongoose": "^5.9.2",
+    "morgan": "^1.9.1",
+    "serve-favicon": "^2.5.0",
+    "socket.io": "^2.3.0"
   },
   "devDependencies": {
-    "grunt": "0.4.2"
-  },
-  "scripts": {
-    "postinstall": "./node_modules/bower/bin/bower install"
+    "grunt": "^1.0.4"
   }
 }
