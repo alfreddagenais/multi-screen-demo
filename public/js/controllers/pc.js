@@ -30,6 +30,7 @@ controller('PcGesturesCtrl', function($scope, socket) {
 
   socket.on('gestures:notify', function(data) {
     $scope.gesture = data.gesture;
+    console.log( data.gesture );
   });
 }).
 
